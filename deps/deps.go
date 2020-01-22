@@ -142,6 +142,11 @@ var dependencies = map[string]Dependency{
 		Macosx:  "https://github.com/jenkins-x/jx/releases/download/v2.0.795/jx-darwin-amd64.tar.gz",
 		Linux:   "https://github.com/jenkins-x/jx/releases/download/v2.0.795/jx-linux-amd64.tar.gz",
 	},
+	"ketall": Dependency{
+		Version: "v3.5.0",
+		Linux:   "https://github.com/corneliusweig/ketall/releases/download/{{.version}}/get-all-amd64-linux.tar.gz",
+		Macosx:  "https://github.com/corneliusweig/ketall/releases/download/{{.version}}/get-all-amd64-darwin.tar.gz",
+	},
 }
 
 // InstallDependency installs a binary to binDir, if ver is nil then the default version is used
